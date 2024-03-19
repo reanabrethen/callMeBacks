@@ -6,7 +6,11 @@ const {
   last,
   each,
   indexOf,
-  map
+  map,
+  filter,
+  reject,
+  uniq,
+  reduce
 } = require("./main");
 
 describe("identity", function () {
@@ -150,10 +154,8 @@ describe("map", function () {
   });
 });
 
-const { filter, 
-        reject, 
-        uniq, 
-        reduce } = require('./functions.js');
+
+
 
 describe('filter', () => {
   it('should return an array with elements that pass the truth test', () => {
